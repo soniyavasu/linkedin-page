@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LinkedIn Homepage</title>
+<link rel="stylesheet" href="css/style3.css">
+<link rel="stylesheet" href="icons/css/font-awesome.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="./icon/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+</head>
+<body>	
+<header class="header"  style="z-index:2;position:fixed;">
+	<div class="container">
+		<div class="flex-container">
+			<div class="flex-items-4">
+				<div class="linked-in">
+						<div class="header_img"><img src="images/logo.png"alt="" width="30px"></div>
+						<div class="search_box">	
+							<input type="search"  name="search_name" class="search_name" id="input-ele" placeholder=" search"/>	
+							<i class="fa fa-search" aria-hidden="true"></i>
+						</div>
+				</div>
+			</div>
+				
+			<div class="flex-items-6">
+				<div class="flex-container  nav-bar">
+					<div class="nav-bar1">
+						<i class="fa fa-home" aria-hidden="true"></i><br>
+						<a href="#">Home</a>
+					</div>
+					<div class="nav-bar1">
+						<i class="fa fa-users" aria-hidden="true"></i><br>
+						<a href="#">My Network</a>
+					</div>
+					<div class="nav-bar1">
+						<i class="fa fa-briefcase" aria-hidden="true"></i><br>
+						<a href="#">Jobs</a>
+					</div>
+					<div class="nav-bar1">
+						<i class="fa fa-commenting" aria-hidden="true"></i><br>
+						<a href="#">Messaging</a>
+					</div>
+					<div class="nav-bar1">
+						<i class="fa fa-bell" aria-hidden="true"></i><br>
+						<a href="#">Notification</a>
+					</div>
+					<div class="nav-bar2">
+						<i class="fa fa-user-circle" aria-hidden="true"></i><br>
+						
+							<a href="#" id="#drop_down_seen">Me<i id="me_i" class="fa fa-caret-down"  aria-hidden="true"></i>
+								<div class="drop_down">
+									<div class="drop_down1">
+											<div><i class="fa fa-user-circle" aria-hidden="true"></i></div>
+											<div>
+												<h4>Vinoth K</h4>
+												<p>Senior Front End Developer</p>
+											</div>
+									</div>
+									<div class="drop_down_btn"><button>View Profile</button></div>
+									<div class="drop_down2">
+										<h4>Account</h4>
+										<i class="fa fa-square" aria-hidden="true"><span>Try Premium for free</span></i>
+										<p>Setting & Privacy</p>
+										<p>Help</p>
+										<p>Language</p>
+									</div>
+									<div class="drop_down3">
+										<h4>Manage</h4>
+										<p>Posts & Activity</p>
+										<p>Job positing Account</p>
+									</div>
+									<div class="drop_down4" onclick="logOut(event)"><a href="#">Sign Out</a></div>
+								</div>
+							</a>
+						
+					</div>
+				</div>
+			</div>
+			<div class="flex-items-2">
+				<div class="flex-container "> 
+					<div class="nav_link">
+						<div class="nav_link1"> 
+							<i class="fa fa-th" aria-hidden="true" id="icon_des"></i>
+							<p>For Bussiness<i class="fa fa-caret-down" aria-hidden="true"></i></p>
+						</div>
+						<div class="free">
+							<a href="#" class="free2">Try Premium for<span class="free1">free</span></a>
+						</div>
+					</div>
+				 </div> 
+			</div> 
+		</div>
+	</div>
+</header>
+<section class="profile_body" style="z-index:1;padding-top:80px;">
+	<div class="container">
+		<div class="flex-container">
+			<div class="flex-items-9">
+				<div class="imgdiv">
+					<div class="img_bg_Icon">
+						<div class="icon_div_img">
+							<img src="./images/bg_img1.jpg" id="img_bg">
+							<i class="fa fa-pencil imgpen" aria-hidden="true"></i>
+							
+						</div>
+						<!-- <i class="fa fa-user-circle user1" aria-hidden="true" id="img_icon"></i> -->
+						<img src="./images/soni.jpeg" class="image1 user1" id="img_icon">
+					</div>
+					<div class="flex-items-12 imgdiv_content">
+						
+						<div class="flex-items-8">
+							<h1 id="name">Soniya Vasu </h1>
+							<p class="work_knowlage">MIS Executive/Purchase Reconciliation Slip/ frontend developer</p>
+							<p class="hastag">Talks about #frontend, #devloper, #MIS Executive,<br>#Purchase Reconciliation Slip, and #Medical Distribution companies</p>
+							<div class="city">Chennai, Tamil Nadu, India <a href="#" id="con_info">Contact info</a><br></div>
+							<div class="followers"><a href="#">494 followers </a>.<a href="#">467 connections</a><br></div>	
+							<button type="button" class="open_btn">open to</button><button type="button" class="open_btn2">Add profile section</button><button type="button" class="open_btn3">more</button>
+						</div>
+						
+						<div class="flex-items-4 companydiv">
+							<div class="pencil">
+								<i class="fa fa-pencil" aria-hidden="true"></i>
+								<div class="forms">		
+									<form id="edit_profile">
+										<div class="form-controls">
+										<h2>Basic Info</h2>
+										<div class="close_div">
+											<button class="close_btn">close <i class="fa fa-times" aria-hidden="true"></i></button>
+										</div>
+										<div class="form-control">
+											<p>First Name*</p>
+											<input type="text" name="fname" class="inputs" id="editFname"/>
+										</div>
+										<div class="form-control">
+											<p>Last Name*</p>
+											<input type="text" name="lname" class="inputs" id="editLname"/>
+										</div>
+										<div class="form-control">
+											<p>HeadLine*</p>
+											<input type="text" name="headline" class="inputs" id="headline"/>
+										</div>
+										<h2>Current position</h2>
+										<div class="form-control">
+											<p>Position*</p>
+											<input type="text" name="Position" class="inputs" id="Position"/>
+										</div>
+										<h2>Location</h2>
+										<div class="form-control">
+											<p>Country / Region*</p>
+											<input type="text" name="Country" class="inputs" id="placeCoureg"/>
+										</div>
+										<div class="form-control">
+											<p>city*</p>
+											<input type="text" name="placeity" class="inputs" id="placeity"/>
+										</div>
+										<div class="form-control">
+											<p>state*</p>
+											<input type="text" name="placestate" class="inputs" id="placestate"/>
+										</div>
+										</div>
+										<div class="popop_edit_submit">
+											<button type="submit" onClick="editinformation(event)" class="pop-save">save</button>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="company">
+								<i class="fa fa-building-o" aria-hidden="true"></i>
+								<div>
+								<a href="#">Palepu Pharma Private Limited </a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-controlss form-control">
+							<h2>skills</h2>
+								<form action="" id="myFormId">
+									<button id="addskillbtn">
+										Add skill
+									</button>
+									<div id="skillitems">
+									</div>
+
+								</form>
+							<div class="select_btn">
+								<span class="btn">HTML</span>
+								<span class="btn">CSS</span>
+								<span class="btn">Javascript</span>
+								<span class="btn">PHP</span>
+								<span class="btn">Java</span>
+								<span class="btn">C++</span>
+								<span class="btn">Oops</span>
+																		
+							</div>
+							<div><button id="close2">close</button></div>
+						</div>		
+						
+					</div>
+
+				
+				<!-- <div class="sugesed_div"> -->
+					<!-- <div class="flex-items-12 sugeseddiv_content"> -->
+						<!-- <div class="flex-items-12"> -->
+							<!-- <h1 class="suggesed_name">Suggested for you</h1> -->
+							<!-- <div class="eye"> -->
+							<!-- <i class="fa fa-eye" aria-hidden="true"></i> -->
+							<!-- <p class="private">private to you</p> -->
+							<!-- </div> -->
+							<!-- <h4>Intermediate</h4> -->
+							<!-- <div class="schaldiv"> -->
+								<!-- <div class="schal"><div class="inschal"></div></div> -->
+								<!-- <div style="padding-left:10px;">6/7</div> -->
+							<!-- </div> -->
+							<!-- <div class="onestep"> -->
+								<!-- <p>Complete 1 step to achieve</p>	 -->
+								<!-- <a href="#">All-Star</a> -->
+							<!-- </div> -->
+							<!-- <div class="summery"> -->
+								<!-- <div class="news"> -->
+									<!-- <i class="fa fa-newspaper-o" aria-hidden="true"></i>	 -->
+									<!-- <h4>Write a summary to highlight your personality or work experience</h4> -->
+								<!-- </div> -->
+								<!-- <p>Members who include a summary receive up to 3.9 times as many profile views.</p> -->
+								<!-- <button type="button" class="open_btn3">Add a summery</button> -->
+							<!-- </div> -->
+						<!-- </div> -->
+					<!-- </div> -->
+				<!-- </div> -->
+				
+				<!-- <div class="sugesed_div"> -->
+					<!-- <div class="flex-items-12 sugeseddiv_content"> -->
+						<!-- <div class="flex-items-12"> -->
+							<!-- <h1 class="suggesed_name">Resources</h1> -->
+							<!-- <div class="eye"> -->
+								<!-- <i class="fa fa-eye" aria-hidden="true"></i> -->
+								<!-- <p class="private">private to you</p> -->
+							<!-- </div> -->
+							<!-- <div class="antana"> -->
+								<!-- <i class="fa fa-rss" aria-hidden="true"></i> -->
+								<!-- <a href="#" class="creat_mode">Creator mode</a> -->
+								<!-- <a href="#" class="on_btn">on</a> -->
+							<!-- </div> -->
+								<!-- <a href="#" class="discovered">Get discovered, showcase content on your profile, and get access to creator tools</a> -->
+								<!-- <br> -->
+								<!-- <br> -->
+								<!-- <hr> -->
+								<!-- <br> -->
+							<!-- <div class="antana"> -->
+								<!-- <i class="fa fa-users" aria-hidden="true"></i> -->
+								<!-- <a href="#" class="creat_mode">My Network</a> -->
+							<!-- </div> -->
+								<!-- <a href="#" class="discovered">See and manage your connections and interests.</a> -->
+								<!-- <br> -->
+								<!-- <br> -->
+								<!-- <hr> -->
+							<!-- <div class="showall"> -->
+								<!-- <a href="#" class="creat_mode">Show all activity</a> -->
+								<!-- <i class="fa fa-arrow-right arroe" aria-hidden="true"></i> -->
+							<!-- </div> -->
+							
+						<!-- </div> -->
+					<!-- </div> -->
+					
+				<!-- </div> -->
+					
+					
+					<br>
+					
+					<div class="experians">
+						<div class="experience_head">
+							<h1>Experience</h1>
+							<div style="display:flex;align-items:center;">
+							<p class="plus">+</p>
+							<i class="fa fa-pencil" aria-hidden="true"></i>
+							</div>
+						</div>
+						
+						<div class="company expe_company">
+								<i class="fa fa-building-o" aria-hidden="true"></i>
+								<div>
+									<h2 class="posiction">MIS Executive Officer</h2>
+									<p class="job">Palepu Pharma Private Limited · Full-time</p>
+									<p class="date">march 2021 - may 2022 · 1 yr 5 mos</p>
+									<p class="date">Chennai, Tamil Nadu, India</p>
+									<p class="designation">Management Information System Executive</p>
+									<p class="skill"><b>Skills:</b>Excel Formulas</p>
+								</div>
+						</div>
+						<hr>
+						<div class="company expe_company">
+								<i class="fa fa-building-o" aria-hidden="true"></i>
+								<div>
+									<h2 class="posiction">PRS Officer</h2>
+									<p class="job">Purchase Reconciliation Slip . Full-time</p>
+									<p class="date">march 2021 - may 2022 · 1 yr 5 mos</p>
+									<p class="date">Chennai, Tamil Nadu, India</p>
+									<p class="designation">Purchase Reconciliation Slip</p>
+								</div>
+						</div>
+					</div>
+					
+					<br>
+					
+					<div class="experians">
+						<div class="experience_head">
+							<h1>Education</h1>
+							<div style="display:flex;align-items:center;">
+							<p class="plus">+</p>
+							<i class="fa fa-pencil" aria-hidden="true"></i>
+							</div>
+						</div>
+						
+						<div class="company expe_company">
+							<i class="fa fa-building-o" aria-hidden="true"></i>
+								<div>
+									<h2 class="posiction">University of Madras</h2>
+									<p class="job">Shri Shankarlal Sundarbai Shasun Jain College for Women</p>
+									<p class="date">2018 - 2021</p>
+								</div>
+						</div>
+					</div>
+					
+					<br>
+					<br>
+					
+				</div>
+				
+				
+				
+				
+			<!-- </div>	 -->
+			<!-- <div class="flex-container"> -->
+				<div class="flex-items-3 centerbox">
+					<div class="flex-container center_boxmain22">
+						<div class="center_box2">
+							<div>
+								<h2 class="people">People you may know</h2>
+								<div class="flex-container">
+										<img src="./img/person-3.jpg" class="image1">
+									<div class="flex-items-9 details_name">
+										<h2 class="people_name">Dhanush</h2>
+										<p class="date_name">Frontend Developer / Lead UI devloper</p>
+										<p class="date_name">Zogo (chennai)</p>
+										
+										<button type="button" class="conect"><i class="fa fa-user" aria-hidden="true">+</i>Connect</button>
+									</div>
+								</div>
+								<br>
+								<hr>
+								<br>
+								<div class="flex-container">
+										<img src="./img/person-2.jpg" class="image1">
+									<div class="flex-items-9 details_name">
+										<h2 class="people_name">Akash Anbu</h2>
+										<p class="date_name">Frontend Developer / Lead UX Designer</p>
+										<p class="date_name">Zogo (chennai)</p>
+										
+										<button type="button" class="conect"><i class="fa fa-user" aria-hidden="true">+</i>Connect</button>
+									</div>
+								</div>
+								<br>
+								<hr>
+								<br>
+								<div class="flex-container">
+										<img src="./img/person-6.jpg" class="image1">
+									<div class="flex-items-9 details_name">
+										<h2 class="people_name">Anugrahan</h2>
+										<p class="date_name">Frontend Developer / Lead UI devloper</p>
+										<p class="date_name">Zogo (chennai)</p>
+										
+										<button type="button" class="conect"><i class="fa fa-user" aria-hidden="true">+</i>Connect</button>
+									</div>
+								</div>
+								<br>
+								<hr>
+								<br>
+								<div class="flex-container">
+										<img src="./img/person-5.jpg" class="image1">
+									<div class="flex-items-9 details_name">
+										<h2 class="people_name">Raguvaran</h2>
+										<p class="date_name">Frontend Developer / Lead UX Designer</p>
+										<p class="date_name">Zogo (chennai)</p>
+										
+										<button type="button" class="conect"><i class="fa fa-user" aria-hidden="true">+</i>Connect</button>
+									</div>
+								</div>
+								<br>
+								<hr>
+								<br>
+								<div class="flex-container">
+										<img src="./images/karthik.jpeg" class="image1">
+									<div class="flex-items-9 details_name">
+										<h2 class="people_name">Karthi</h2>
+										<p class="date_name">Frontend Developer / Lead UI devloper</p>
+										<p class="date_name">Zogo (chennai)</p>
+										
+										<button type="button" class="conect"><i class="fa fa-user" aria-hidden="true">+</i>Connect</button>
+									</div>
+								</div>
+								<br>
+								<hr>
+								<br>
+								<div class="flex-container">
+										<img src="./images/yogesh.jpeg" class="image1">
+									<div class="flex-items-9 details_name">
+										<h2 class="people_name">Yokesh</h2>
+										<p class="date_name">Frontend Developer / Lead UX Designer</p>
+										<p class="date_name">Zogo (chennai)</p>
+										<button type="button" class="conect"><i class="fa fa-user" aria-hidden="true">+</i>Connect</button>
+									</div>
+								</div>
+								<br>
+								<hr>
+								<br>
+								<div class="flex-container">
+										<img src="./img/person-1.png" class="image1">
+									<div class="flex-items-9 details_name">
+										<h2 class="people_name">Hari Kishor</h2>
+										<p class="date_name">Frontend Developer / Lead UI Designer</p>
+										<p class="date_name">Zogo (chennai)</p>
+										<button type="button" class="conect"><i class="fa fa-user" aria-hidden="true">+</i>Connect</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+				</div>
+			</div>
+		</div>
+	
+</section>
+
+
+<!-- <script src="./js/object.js"></script> -->
+
+</body>
+</html>

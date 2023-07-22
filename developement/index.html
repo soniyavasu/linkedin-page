@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- <link rel="stylesheet" href="./icons/css/font-awesome.min.css"> -->
+<title>task design</title>
+<link rel="stylesheet" href="css/style2.css">
+<link rel="stylesheet" href="icons/css/font-awesome.css">	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900
+&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+	<div class="container">
+		<div class="flex-container">
+			<div class="flex-items-4">
+				<div class="linked-in">
+						<div class="header_img edi"><img src="images/logo.png"alt="" width="30px"></div>
+						<div class="search_box edi">	
+							<input type="search"  name="search_name" class="search_name" id="input-ele" placeholder=" search"/>	
+							<i class="fa fa-search edi" aria-hidden="true"></i>
+						</div>
+				</div>
+			</div>
+				
+			<div class="flex-items-6">
+				<div class="flex-container  nav-bar">
+					<div class="nav-bar1">
+						<i class="fa fa-home" aria-hidden="true" onclick="gotohome(event)"></i><br>
+						<a href="#">Home</a>
+					</div>
+					<div class="nav-bar1">
+						<i class="fa fa-users" aria-hidden="true"></i><br>
+						<a href="#">My Network</a>
+					</div>
+					<div class="nav-bar1">
+						<i class="fa fa-briefcase" aria-hidden="true"></i><br>
+						<a href="#">Jobs</a>
+					</div>
+					<div class="nav-bar1">
+						<i class="fa fa-commenting" aria-hidden="true"></i><br>
+						<a href="#">Messaging</a>
+					</div>
+					<div class="nav-bar1">
+						<i class="fa fa-bell" aria-hidden="true"></i><br>
+						<a href="#">Notification</a>
+					</div>
+					<div class="nav-bar2">
+						<i class="fa fa-user-circle" aria-hidden="true"></i><br>
+						
+							<a href="#" id="#drop_down_seen">Me <i class="fa fa-caret-down"  aria-hidden="true"></i>
+								<div class="drop_down">
+									<div class="drop_down1">
+											<div><i class="fa fa-user-circle" aria-hidden="true"></i></div>
+											<div>
+												<h4 class="adminname">Vinoth K</h4>
+												<p>Senior Front End Developer</p>
+											</div>
+									</div>
+									<div class="drop_down_btn"><a class="border" href="profil.html">View Profile</a></div>
+									<div class="drop_down2">
+										<h4>Account</h4>
+										<i class="fa fa-square" aria-hidden="true"><span>Try Premium for free</span></i>
+										<p>Setting & Privacy</p>
+										<p>Help</p>
+										<p>Language</p>
+									</div>
+									<div class="drop_down3">
+										<h4>Manage</h4>
+										<p>Posts & Activity</p>
+										<p>Job positing Account</p>
+									</div>
+									<div class="drop_down4" onclick="logOut(event)"><a class="pad" href="#">Sign Out</a></div>
+								</div>
+							</a>
+						
+					</div>
+				</div>
+			</div>
+			<div class="flex-items-2">
+				<div class="flex-container "> 
+					<div class="nav_link">
+						<div class="nav_link1"> 
+							<i class="fa fa-th" aria-hidden="true" id="icon_des"></i>
+							<p>For Bussiness<i class="fa fa-caret-down" aria-hidden="true"></i></p>
+						</div>
+						<div class="free">
+							<a href="#" class="free2">Try Premium for<span class="free1">free</span></a>
+						</div>
+					</div>
+				 </div> 
+			</div> 
+		</div>
+	</div>
+</header>
+<section class="body_sec">
+	
+		<div class="container">
+			<div class="flex-container">
+				<div class="flex-items-3 ">
+					<div class="profile_sec">
+						<div class="profile">
+							<img src="images/coding.jpg"alt="" width="100%" height="70px">
+							<i class="fa fa-user-circle" aria-hidden="true"></i>
+						</div>
+						<div class="profile_name">
+							<h4 class="adminname">Vinoth K</h4>
+							<p>Senior Front End Developer</p>
+						</div>
+						<div class="profile_info">
+							<div>
+								<p>connections<p>
+								<h5>Grow Your Network</h5>
+							</div>
+							<div class="profile-num"><span>74</span></div>
+							
+						</div>
+						<div class="profile_info num1">
+							<div><p>Who's Viewed Your Profile</p></div>
+							<div class="profile_value"><span>39</span></div>
+						</div>
+						<div class="profile1">
+							<p>Acess excuite tools & insights</p>
+							<i class="fa fa-square" aria-hidden="true"><a href="#"> Try Premium for free</span></a></i>
+						</div>
+						<div class="profile2">
+							<i class="fa fa-bookmark" aria-hidden="true">  My items</i>
+						</div>
+					</div>
+					<div class="recent">
+						<div class="item">
+							<div class="history">
+								<p>Recent</p>
+								
+							</div>
+							
+							<div class="links">
+								
+								<i class="fa fa-hashtag" aria-hidden="true"><a href="#" class="recent_links">php</a></i>
+							</div>
+							<div class="links">
+								
+								<i class="fa fa-hashtag" aria-hidden="true"><a href="#" class="recent_links">mobileapplications</a></i>
+							</div>
+							<div class="links">
+								<i class="fa fa-hashtag" aria-hidden="true"><a href="#" class="recent_links">programming</a></i>
+							</div>
+							<div class="links">
+								<i class="fa fa-hashtag" aria-hidden="true"><a href="#" class="recent_links">technology</a></i>
+							</div>
+							<div class="links">
+								<i class="fa fa-hashtag" aria-hidden="true"><a href="#" class="recent_links">music</a></i>
+							</div>
+
+							
+							<div class="events">
+							 <a href="#">Groups</a>
+							</div>
+							<div class="events">
+							  <a href="#">Events <span class="plus"><i class="fa fa-plus" aria-hidden="true"></i></span></a>
+							  
+							
+							</div>
+							<div class="events">
+							 <a href="#">Followed Hashtags</a>
+							</div>
+							
+							<div class="links">
+								
+								<i class="fa fa-hashtag" aria-hidden="true"><a href="#" class="recent_links">php</a></i>
+							</div>
+							<div class="links">
+								
+								<i class="fa fa-hashtag" aria-hidden="true"><a href="#" class="recent_links">mobileapplications</a></i>
+							</div>
+							<div class="links">
+								<i class="fa fa-hashtag" aria-hidden="true"><a href="#" class="recent_links">programming</a></i>
+							</div>
+							<div class="newspara_1">
+							 <a href="#" class="newspage" id="show">Show more <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+						   </div>
+					   
+							<div class="discover">
+								<a href="#">Discover more</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="flex-items-5">
+					<div class="input_upload">
+						<div class="pro_input">
+							<i class="fa fa-user-circle" aria-hidden="true"></i>
+							<input onclick="post(event)" type="text" name="user_name" placeholder="Start a post" class="form_control" id="mail"/>
+							<div class="overlays"></div>
+							<div class="post-box">
+                                <div class="prof-head flex justify-content">
+                                    <h4>Create a post</h4>
+                                    <button onclick="hidePost(event)"><i class="fa fa-times" aria-hidden="true"></i></button>
+                                </div>
+                                <div class="prof-img flex">
+                                    <div class="userdp"><img src="images/soni.jpeg" width="100%" /></div>
+                                    <h4 class="username">Soniya Vasu</h4>
+                                </div>
+                                <div class="cmt-text">
+                                    <textarea rows="6" placeholder="What do you want to talk about?" data-post="posttext" onkeyup="onPosthandler(event)"></textarea>
+                                </div>
+                                <div class="post-card flex justify-content">
+                                    <div class="post-btn">
+										<input type="file" id="uploadInput" data-post="postimg" onchange="onPosthandler(event)" />
+                                        <button class="modal-box-input" onclick="onUpload(event)"><i class="fa fa-picture-o" aria-hidden="true"></i></button>
+                                        <button><i class="fa fa-youtube-play" aria-hidden="true"></i></button>
+                                        <button><i class="fa fa-file-text" aria-hidden="true"></i></button>
+                                        <button><i class="fa fa-ellipsis-h" aria-hidden="true"></i></button>
+                                    </div>
+                                    <div class="send-post-btn">
+                                        <button class="post">Post</button>
+                                    </div>
+                                </div>
+
+                            </div>
+						</div>
+						<div class="upload_items">
+							<div class="upload1">
+								<i class="fa fa-picture-o" aria-hidden="true"><span>Photo</span></i>
+							</div>
+							<div class="upload2">
+								<i class="fa fa-play-circle" aria-hidden="true"><span>Video</span></i>
+							</div>
+							<div class="upload3">
+								<i class="fa fa-calendar-o" aria-hidden="true"><span>Event</span></i>
+							</div>
+							<div class="upload4">
+								<i class="fa fa-id-card-o" aria-hidden="true"><span>Write article</span></i>
+							</div>
+						</div>
+					</div>
+					<div class="or">
+						<div class="sort">
+						</div>
+						<p class="top">Sort by: <span>Top<i class="fa fa-caret-down" aria-hidden="true"></i></span></p>
+					</div>
+					<div class="fabvey_sec">
+						<div class="fabvey">
+							<div>
+								<img src="images/fabevy.jpg"alt="" width="50px" height="50px">
+							</div>
+							<div class="fabvey1">
+								<h4>Fabvey</h4>
+								<p>3,358 followers</p>
+								<p>1h. <i class="fa fa-globe" aria-hidden="true"></i></p>
+							</div>
+							<div class="fabvey2"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
+						</div>
+						<div class="solo">
+							<p>Forests are green,ocean are blue-let's keep the eart clean for me and you</p>
+						</div>
+						<div class="solo2">
+							<p>Fabvey wishes to happy eart day!</p>
+							<p class="solo3">...see more</p>
+						</div>
+						<div>
+							<img src="images/image2.jpeg" width="100%" height="600px">
+						</div>
+						<div class="user_report">
+							<div><i class="fa fa-thumbs-o-up" aria-hidden="true"></i><a href="#">Like</a></div>
+							<div><i class="fa fa-commenting-o" aria-hidden="true"></i><a href="#">Comment</a></div>
+							<div><i class="fa fa-superpowers" aria-hidden="true"></i><a href="#">Report</a></div>
+							<div><i class="fa fa-paper-plane-o" aria-hidden="true"></i><a href="#">Send</a></div>
+						</div>
+						<div class="user_icon">
+							<i class="fa fa-info" aria-hidden="true"></i>
+							<span>Be the first to react</span>
+						</div>
+					</div>
+					
+					
+				</div>
+				<div class="flex-items-4">
+					<div class="news_sec">
+						<div class="news">
+							<h4>LinkedIn News</h4>
+							<i class="fa fa-info" aria-hidden="true"></i>
+						</div>
+						<div class="news1">
+							<li><a href="#">Here are 2023's top compaine to wat...</a></li>
+							<p>Top news - 8,784 readers</p>
+						</div>
+						<div class="news1">
+							<li><a href="#">Meta cuts core roles; workers react</a></li>
+							<p>1d ago- 39,908	 readers</p>
+						</div>
+						<div class="news1">
+							<li><a href="#">Engineering colleges catch the al bug</a></li>
+							<p>1d ago- 108	 readers</p>
+						</div>
+						<div class="news1">
+							<li><a href="#">Double scoop for ice cream market</a></li>
+							<p>1d ago- 108	 readers</p>
+						</div>
+						<div class="news1">
+							<li><a href="#">Education hit hard by phising</a></li>
+							<p>1d ago</p>
+						</div>
+						<div class="news_show"><a href="#">Shoe more<i class="fa fa-chevron-down" aria-hidden="true"></i></a></div>
+					</div>
+					<div class="privacy_sec">
+						<div class="privacy1">
+							<p>Ad<i class="fa fa-ellipsis-h" aria-hidden="true"></i></p>
+						</div>
+						<div  class="privacy2">
+							<p>Vinoth, unlock your full potential with linkedin premium</p>
+						</div>
+						<div class="privacy_icon">
+							<i class="fa fa-user-circle" id="ic" aria-hidden="true"></i>
+							<i class="fa fa-key" id="ic2" aria-hidden="true"></i>
+						</div>
+						<div class="privacy3">
+							<p>See who's viewed your profile in the last 90 days</p>
+						</div>
+						<div class="privacy4">
+							<button>Try for Free</button>
+						</div>
+						
+					</div>
+					<div class="footer_sec">
+						<div class="footer1">
+							<a href="#">About</a>
+							<a href="#">Accessibility</a>
+							<a href="#">Help Center</a>
+						</div>
+						<div class="footer2">
+							<a href="#">Privacy & terms<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+							<a href="#">Ad choices</a>
+						</div>
+						<div class="footer3">
+							<a href="#">Advertising</a>
+							<a href="#">Business Services<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+						</div>
+						<div class="footer4">
+							<a href="#">Get the Linkedin app</a>
+							<a href="#">more<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+						</div>
+						<div class="footer5">
+							<a href="#">linked  <i class="fa fa-linkedin-square" aria-hidden="true"></i> <span>linked Corpation <i class="fa fa-globe" aria-hidden="true"></i> 2023</span></a>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</section>
+<script src="./script/object1.js">
+</script>
+</body>
+</html>
